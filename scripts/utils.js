@@ -1,7 +1,7 @@
 const applyParallax = (base, DOMElement, Yvalue, Xvalue = 0) => {
   const distance = base.getBoundingClientRect().top;
   const wHeigth = window.innerHeight;
-  if (Math.abs(distance) < wHeigth) {
+  if (Math.abs(distance) < wHeigth && isInScreen(DOMElement)) {
     DOMElement.style.transform = `translate(${(distance * Xvalue) / 5}px, ${
       distance * Yvalue
     }px)`;

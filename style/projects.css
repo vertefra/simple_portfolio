@@ -1,0 +1,65 @@
+.slide-projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-card {
+    width: 90%;
+    display: static;
+    padding: 10px;
+    text-align: center;
+    margin: 25px auto;
+}
+
+.project-card h1 {
+    width: 100%;
+    margin: 15px 0;
+    padding: 5px 0;
+    text-align: right;
+    border-bottom: 2px solid blue;
+    border-top: 2px solid blue;
+    font-size: 25px;
+
+}
+
+.project-card img {
+    width: 50%;
+    border: 2px solid var(--second-color);
+}
+
+.project-card p {
+    text-align: left;
+}
+
+.project-card a {
+    cursor: pointer;
+    color: red;
+}
+
+footer {
+    text-align: left;
+    margin: 15px 0;
+
+}
+
+
+
+.projects-title {
+    position: static;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 80%;
+    justify-content: left;
+}
+
+.tag {
+    border: 1px solid var(--second-color);
+    border-radius: 10px;
+    padding: 0 10px;
+    margin: 2px;
+}

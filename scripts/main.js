@@ -8,6 +8,10 @@ const description = document.querySelector(".description");
 
 const projectSlide = document.querySelector(".slide-projects");
 const projectsTitle = document.querySelector(".projects-title");
+const projectCards = document.querySelectorAll(".project-card");
+
+const checkers = document.getElementById("checkers");
+const discoveringMars = document.getElementById("discovering-mars");
 
 window.onscroll = (e) => {
   applyParallax(introSlide, introImg, -0.2, 0);
@@ -19,6 +23,14 @@ window.onscroll = (e) => {
   applyParallax(iLikeSlide, description, 0.2);
 
   // projects
+  applyParallax(projectSlide, projectsTitle, 0, -0.8);
+
+  // projects fadeIn
+
+  fadeIn(checkers);
+  fadeIn(discoveringMars);
+
+  // checkers
 
   fadeIn(projectsTitle);
 };
