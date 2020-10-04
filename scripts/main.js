@@ -12,6 +12,9 @@ const projectCards = document.querySelectorAll(".project-card");
 
 const checkers = document.getElementById("checkers");
 const discoveringMars = document.getElementById("discovering-mars");
+const tecky = document.getElementById("tecky");
+const todo = document.getElementById("todo");
+const parliamo = document.getElementById("parliamo");
 
 window.onscroll = (e) => {
   applyParallax(introSlide, introImg, -0.2, 0);
@@ -28,9 +31,14 @@ window.onscroll = (e) => {
   // projects fadeIn
 
   fadeIn(checkers);
+
   fadeIn(discoveringMars);
 
-  // checkers
+  fadeIn(tecky);
+
+  fadeIn(todo);
 
   fadeIn(projectsTitle);
+
+  fadeIn(parliamo);
 };

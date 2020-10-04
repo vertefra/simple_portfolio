@@ -17,14 +17,17 @@
     bottom: 20px;
     right: 0;
     padding: 10px;
-    z-index: 1;
+    z-index: 10;
     background-color: var(--main-tr);
     width: 90%;
-    border: gold solid 1px;
-    height: 50px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: var(--second-color);
+    font-family: Roboto Mono;
+    border-top: var(--second-color) 2px solid;
+    font-size: 24px;
 }
 
 #menu {
@@ -43,6 +46,7 @@
 
 .stickyHeader {
     position: fixed;
+    z-index: 10;
     top: 0;
     right: 0;
 }
@@ -50,5 +54,10 @@
 @media only screen and (min-width: 600px) {
     #menu {
         display: flex;
+    }
+
+    .intro-img {
+        background-size: contain;
+        height: 100vh;
     }
 }

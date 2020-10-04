@@ -29,7 +29,7 @@ const fadeIn = (DOMElement) => {
     if (scrollDirection() === "down" && opacity <= 1) {
       opacity = posFromTop / halfPage;
       if (posFromTop > halfPage) {
-        opacity = halfPage / (posFromTop * 0.5);
+        opacity = posFromTop / halfPage;
       }
       DOMElement.style.opacity = `${opacity}`;
     } else if (scrollDirection() === "up" && opacity >= 0) {

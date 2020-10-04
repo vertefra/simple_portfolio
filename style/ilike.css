@@ -10,3 +10,15 @@
 .description span {
     line-height: 50px;
 }
+
+
+@media only screen and (min-width: 600px) {
+    .description {
+        font-size: 30px;
+        right: 50px;
+    }
+
+    .description span {
+        line-height: 80px;
+    }
+}

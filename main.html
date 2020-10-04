@@ -13,18 +13,18 @@
     <link rel="stylesheet" href="./style/projects.css">
     <title>Document</title>
 </head>
+<div class="header">
+    <h1>vertefra</h1>
+    <ul id="menu">
+        <li><a href="#ilike">iLike#</a></li>
+        <li><a href="#projects">projects#</a></li>
+        <li><a href="#iKnow">contactMe#</a></li>
+    </ul>
+</div>
 
 <body>
     <div class="slide slide-intro">
         <div class="intro-img"></div>
-        <div class="header">
-            <h1>vertefra</h1>
-            <ul id="menu">
-                <li><a href="#ilike">iLike</a></li>
-                <li><a href="#projects">projects</a></li>
-                <li><a href="#iKnow">iKnow</a></li>
-            </ul>
-        </div>
     </div>
 
     <div class="slide slide-ilike" id="ilike">
@@ -42,7 +42,7 @@
     </div>
 
 
-    <div class="slide slide-projects">
+    <div class="slide slide-projects" id="projects">
         <h1 class="base-title projects-title">My projects</h1>
 
         <!-- checker -->
@@ -110,7 +110,7 @@
 
         <!-- Tecky -->
 
-        <div class="project-card" id="discovering-mars">
+        <div class="project-card" id="tecky">
             <h1>Tecky //</h1>
             <img class="project-img" alt="project image" src="./assets/projects/tecky.png" />
             <section class="tags">
@@ -145,10 +145,92 @@
         </div>
 
 
-    </div>
 
-    <div class="slide slide-aboutProjects">
-        <h1>Contact Me</h1>
+        <!-- To do -->
+
+        <div class="project-card" id="todo">
+            <h1>ToDo //</h1>
+            <img class="project-img" alt="project image" src="./assets/projects/to_do.png" />
+            <section class="tags">
+                <div class="tag">
+                    JavaScript
+                </div>
+                <div class="tag">
+                    CSS
+                </div>
+                <div class="tag">
+                    HTML
+                </div>
+            </section>
+            <p class="project-description">
+                Simple to do app. Testing drag and drop in Vanilla JS
+            </p>
+            <footer>
+                <a href="https://checker-6iseckr0m.vercel.app/">Vercel</a>
+                <a href="https://github.com/vertefra/checker">GitHub</a>
+
+            </footer>
+        </div>
+
+
+        <!-- Parliamo -->
+
+        <div class="project-card" id="parliamo">
+            <h1>Parliamo //</h1>
+            <img class="project-img" alt="project image" src="./assets/projects/parliamo.png" />
+            <section class="tags">
+                <div class="tag">
+                    ReactJs
+                </div>
+                <div class="tag">
+                    MongoDb
+                </div>
+                <div class="tag">
+                    Express
+                </div>
+                <div class="tag">
+                    Python
+                </div>
+                <div class="tag">
+                    Postgres
+                </div>
+                <div class="tag">
+                    SocketIO
+                </div>
+                <div class="tag">
+                    Microservices
+                </div>
+                <div class="tag">
+                    Doker
+                </div>
+            </section>
+            <p class="project-description">
+                WebChat build with Microservices Architecture using Express, python FastAPI for the backend,
+                React for the front end.
+
+            </p>
+            <footer>
+                <a href="http://68.183.126.73/">DigitalOcean</a>
+                <a href="#">GitHub</a>
+
+            </footer>
+        </div>
+
+        <div class="slide slide-contactme" id="contanctMe">
+            <h1 class="base-title title">contactMe</h1>
+            <aside class="description">
+                <p>
+                    <span>Contacts: </span> </br>
+                    <ul>
+                        <li><a href="https://github.com/vertefra/">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/francesco-vertemati/">Linkedin</a></li>
+                        <li><a href="https://twitter.com/FVertemati">Twitter</a></li>
+                    </ul>
+                </p>
+            </aside>
+        </div>
+
+
     </div>
     <script src="/scripts/utils.js"></script>
     <script src="/scripts/main.js"></script>
