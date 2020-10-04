@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,500;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+
+
+    --main-color-: rgba(27, 26, 29, 1);
+    --second-color: rgba(202, 187, 170, 1);
+    --main-tr: rgba(27, 26, 29, 0.7);
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.base-title {
+    z-index: 1;
+    position: absolute;
+    width: 50%;
+    height: 80px;
+    right: 0;
+    left: 0;
+    bottom: 60vh;
+    margin: auto;
+    opacity: 0;
+}
+
+
+.slide {
+    z-index: -1;
+    position: relative;
+    font-family: Roboto Mono;
+    color: var(--second-color);
+    width: 100%;
+    height: 100vh;
+    margin: 5px auto;
+    background-color: var(--main-color-);
+}

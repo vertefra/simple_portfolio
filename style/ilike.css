@@ -1,0 +1,15 @@
+.description {
+    z-index: 0;
+    position: absolute;
+    bottom: 30vh;
+    text-align: right;
+    right: 10px;
+    width: 80%;
+}
+
+.description span {
+    line-height: 50px;
+}
+
+
+.title {}
