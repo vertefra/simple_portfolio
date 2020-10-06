@@ -219,16 +219,20 @@
         <div class="slide slide-contactme" id="contactMe">
             <aside class="social description">
                 <p>
+                    <figure id="img-profile">
+                        <img src="assets/prof_b_w.jpg">
+                    </figure>
                     <span>Social Media: </span> </br>
                     <ul>
-                        <li><a href="https://github.com/vertefra/">GitHub</a></li>
-                        <li><a href="https://www.linkedin.com/in/francesco-vertemati/">Linkedin</a></li>
-                        <li><a href="https://twitter.com/FVertemati">Twitter</a></li>
-                        <li><a href="https://www.hackerrank.com/francescovertem1?hr_r=1">Hackerrank</a></li>
+                        <li><a href="https://github.com/vertefra/" target="_blank">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/francesco-vertemati/" target="_blank">Linkedin</a></li>
+                        <li><a href="https://twitter.com/FVertemati" target="_blank">Twitter</a></li>
+                        <li><a href="https://www.hackerrank.com/francescovertem1?hr_r=1" target="_blank">Hackerrank</a></li>
+                        <li><a href="mailto:francesco@vertefra.com" target="_blank">francesco@vertefra.com</a></li>
                     </ul>
                 </p>
             </aside>
-            <section class="email-form">
+            <!-- <section class="email-form">
                 <form>
                     <h3 class="base-title contact">contact</h3>
                     <fieldset>
@@ -243,16 +247,16 @@
                         <label for="message">#message
                         <textarea id="message" type="text"></textarea>
                         </label>
-                        <input class="primary-btn"type="submit"value="send"/>
+                        <input id="send-email" class="primary-btn" type="submit"value="send"/>
                     </fieldset>
                 </form>
-            </section>
+            </section> -->
         </div>
 
 
     </div>
-    <script src="/scripts/utils.js"></script>
-    <script src="/scripts/main.js"></script>
+    <script src="/scripts/utils.js" defer></script>
+    <script type="module" src="/scripts/bundle.js" defer ></script>
 </body>
 
 </html>

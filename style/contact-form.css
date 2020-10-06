@@ -1,36 +1,70 @@
 .contact {
-    opacity: 1;
-    position: static;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  opacity: 1;
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 fieldset {
-    border: var(--second-color) 1px solid;
-    width: 60%;
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
+  border: var(--second-color) 1px solid;
+  width: 60%;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }
 
 label {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .email-form {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 fieldset input,
 fieldset textarea {
-    width: 100%;
-    resize: none;
-    margin: 5px 0;
+  width: 100%;
+  resize: none;
+  margin: 5px 0;
 }
 
+textarea {
+  height: 250px;
+}
+
+fieldset input {
+  height: 40px;
+}
 
 .social {
-    bottom: 20px;
+  bottom: 20px;
+}
+
+#img-profile img {
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid var(--second-color);
+}
+
+@media only screen and (min-width: 600px) {
+  .email-form {
+    width: 60%;
+    margin: 100px auto 0 auto;
+  }
+  .slide-contactme {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  label {
+    font-size: 21px;
+  }
+
+  #img-profile img {
+    width: 180px;
+    border-radius: 50%;
+    border: 2px solid var(--second-color);
+  }
 }

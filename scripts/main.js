@@ -1,3 +1,5 @@
+const dotenv = require("dotenv").config();
+
 const introImg = document.querySelector(".intro-img");
 const introSlide = document.querySelector(".slide-intro");
 const header = document.querySelector(".header");
@@ -19,7 +21,7 @@ const parliamo = document.getElementById("parliamo");
 const social = document.querySelector(".social");
 const contactMe = document.querySelector(".slide-contactme");
 
-const emailForm = document.querySelector(".email-form");
+// const emailForm = document.querySelector(".email-form");
 
 window.onscroll = (e) => {
   applyParallax(introSlide, introImg, -0.8, 0);
@@ -48,9 +50,34 @@ window.onscroll = (e) => {
   // contacts
 
   applyParallax(contactMe, social, -0.5);
-
-  fadeIn(emailForm);
-  applyParallax(contactMe, emailForm, 0.2);
 };
 
-const 
+// mail
+
+// const nodemailer = require("nodemailer");
+// const sender = document.getElementById("email");
+// const senderName = document.getElementById("name");
+// const button = document.getElementById("send-email");
+// const mailerConfig = {
+//   host: "smtp.office365.com",
+//   secureConnection: true,
+//   port: 587,
+//   auth: {
+//     user: process.env.USER,
+//     psw: process.env.PSW,
+//   },
+// };
+
+console.log(process.env);
+
+// const transporter = nodemailer.createTransport(mailerConfig);
+
+// const mailOptions = {
+//   from: sender,
+//   to: "francesco@vertefra.com",
+//   subject: "contact from website. sender name: " + senderName,
+// };
+
+// button.onclick = () => {
+//   console.log("clicked");
+// };

@@ -1,94 +1,88 @@
 .slide-projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .project-card {
-    width: 90%;
-    display: static;
-    padding: 10px;
-    text-align: center;
-    margin: 25px auto;
+  width: 90%;
+  display: static;
+  padding: 10px;
+  text-align: center;
+  margin: 25px auto;
 }
 
 .project-card h1 {
-    width: 100%;
-    margin: 15px 0;
-    padding: 5px 0;
-    text-align: right;
-    border-bottom: 2px solid blue;
-    border-top: 2px solid blue;
-    font-size: 25px;
-
+  width: 100%;
+  margin: 15px 0;
+  padding: 5px 0;
+  text-align: right;
+  border-bottom: 2px solid blue;
+  border-top: 2px solid blue;
+  font-size: 25px;
 }
 
 .project-card img {
-    width: 50%;
-    border: 2px solid var(--second-color);
+  width: 50%;
+  border: 2px solid var(--second-color);
 }
 
 .project-card p {
-    text-align: left;
+  text-align: left;
 }
 
 .project-card a {
-    cursor: pointer;
-    color: red;
+  cursor: pointer;
+  color: red;
 }
 
-
-
-
-
 .projects-title {
-    position: static;
+  position: static;
 }
 
 .tags {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    width: 80%;
-    justify-content: left;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  width: 80%;
+  justify-content: left;
 }
 
 .tag {
-    border: 1px solid var(--second-color);
-    border-radius: 10px;
-    padding: 0 10px;
-    margin: 2px;
+  border: 1px solid var(--second-color);
+  border-radius: 10px;
+  padding: 0 10px;
+  margin: 2px;
 }
 
 footer {
-    text-align: left;
-    margin: 15px 0;
-
+  text-align: left;
+  margin: 15px 0;
 }
 
 @media only screen and (min-width: 600px) {
-    .project-card {
-        width: 60%;
-    }
+  .project-card {
+    width: 60%;
+  }
 
-    .project-card h1 {
-        width: 50%;
-        margin: 20px auto
-    }
+  .project-card h1 {
+    width: 50%;
+    margin: 20px auto;
+  }
 
-    .tags {
-        width: 50%;
-        margin: 10px auto;
-    }
+  .tags {
+    width: 50%;
+    margin: 10px auto;
+  }
 
-    .project-card p {
-        width: 50%;
-        margin: 10px auto;
-        font-size: 20px;
-    }
+  .project-card p {
+    width: 50%;
+    margin: 10px auto;
+    font-size: 20px;
+  }
 
-    footer {
-        width: 50%;
-        margin: 10px auto;
-    }
+  footer {
+    width: 50%;
+    margin: 10px auto;
+  }
 }
