@@ -4,21 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="./style/slide1.css">
     <link rel="stylesheet" href="./style/ilike.css">
     <link rel="stylesheet" href="./style/projects.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style/contact-form.css">
+    <title>vertefra</title>
 </head>
 <div class="header">
     <h1>vertefra</h1>
     <ul id="menu">
         <li><a href="#ilike">iLike#</a></li>
         <li><a href="#projects">projects#</a></li>
-        <li><a href="#iKnow">contactMe#</a></li>
+        <li><a href="#contactMe">contactMe#</a></li>
     </ul>
 </div>
 
@@ -205,7 +205,7 @@
                 </div>
             </section>
             <p class="project-description">
-                WebChat build with Microservices Architecture using Express, python FastAPI for the backend,
+                WebChat build using Microservices Architecture: Nodejs/Express & Python/FastAPI for the backend,
                 React for the front end.
 
             </p>
@@ -216,18 +216,37 @@
             </footer>
         </div>
 
-        <div class="slide slide-contactme" id="contanctMe">
-            <h1 class="base-title title">contactMe</h1>
-            <aside class="description">
+        <div class="slide slide-contactme" id="contactMe">
+            <aside class="social description">
                 <p>
-                    <span>Contacts: </span> </br>
+                    <span>Social Media: </span> </br>
                     <ul>
                         <li><a href="https://github.com/vertefra/">GitHub</a></li>
                         <li><a href="https://www.linkedin.com/in/francesco-vertemati/">Linkedin</a></li>
                         <li><a href="https://twitter.com/FVertemati">Twitter</a></li>
+                        <li><a href="https://www.hackerrank.com/francescovertem1?hr_r=1">Hackerrank</a></li>
                     </ul>
                 </p>
             </aside>
+            <section class="email-form">
+                <form>
+                    <h3 class="base-title contact">contact</h3>
+                    <fieldset>
+                        <label for="email">#email
+                        <input id="email" type="email"/>
+                        </label>
+
+                        <label for="name">#name
+                        <input id="name" type="text"/>
+                        </label>
+
+                        <label for="message">#message
+                        <textarea id="message" type="text"></textarea>
+                        </label>
+                        <input class="primary-btn"type="submit"value="send"/>
+                    </fieldset>
+                </form>
+            </section>
         </div>
 
 

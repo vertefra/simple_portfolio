@@ -16,8 +16,13 @@ const tecky = document.getElementById("tecky");
 const todo = document.getElementById("todo");
 const parliamo = document.getElementById("parliamo");
 
+const social = document.querySelector(".social");
+const contactMe = document.querySelector(".slide-contactme");
+
+const emailForm = document.querySelector(".email-form");
+
 window.onscroll = (e) => {
-  applyParallax(introSlide, introImg, -0.2, 0);
+  applyParallax(introSlide, introImg, -0.8, 0);
   makeSticky(header);
   applyParallax(iLikeSlide, title, 0.2, -0.8);
 
@@ -27,9 +32,9 @@ window.onscroll = (e) => {
 
   // projects
   applyParallax(projectSlide, projectsTitle, 0, -0.8);
+  fadeIn(projectsTitle);
 
   // projects fadeIn
-
   fadeIn(checkers);
 
   fadeIn(discoveringMars);
@@ -38,7 +43,14 @@ window.onscroll = (e) => {
 
   fadeIn(todo);
 
-  fadeIn(projectsTitle);
-
   fadeIn(parliamo);
+
+  // contacts
+
+  applyParallax(contactMe, social, -0.5);
+
+  fadeIn(emailForm);
+  applyParallax(contactMe, emailForm, 0.2);
 };
+
+const 

@@ -1,0 +1,36 @@
+.contact {
+    opacity: 1;
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+fieldset {
+    border: var(--second-color) 1px solid;
+    width: 60%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+label {
+    margin: 10px 0;
+}
+
+.email-form {
+    margin-top: 100px;
+}
+
+fieldset input,
+fieldset textarea {
+    width: 100%;
+    resize: none;
+    margin: 5px 0;
+}
+
+
+.social {
+    bottom: 20px;
+}
